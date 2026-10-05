@@ -1,0 +1,23 @@
+{
+  "device": {
+    "name": "Thermostat T1"
+  },
+  "telemetryKeys": [
+    { "key": "temperature", "min": -40, "max": 85 },
+    { "key": "humidity", "min": 0, "max": 100 }
+  ],
+  "realtimeKey": "temperature",
+  "freshnessWindowMs": 300000,
+  "history": {
+    "windowMs": 600000,
+    "limit": 100
+  },
+  "polling": {
+    "maxWaitMs": 30000,
+    "pollIntervalMs": 2000
+  },
+  "retry": {
+    "attempts": 3,
+    "delayMs": 1000
+  }
+}

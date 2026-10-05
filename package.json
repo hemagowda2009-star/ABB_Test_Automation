@@ -1,0 +1,36 @@
+{
+  "name": "ISP-QA-Automation",
+  "version": "1.0.0",
+  "description": "AI powered QA Automation for ISP",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:bdd": "cucumber-js",
+    "test:dry-run": "cucumber-js --dry-run",
+    "test:dashboard": "cucumber-js --tags \"@thingsboard and not @api\"",
+    "test:api": "cucumber-js --tags @api",
+    "report": "cucumber-js && allure generate allure-results --clean -o allure-report",
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "report:open": "allure open allure-report",
+    "report:serve": "allure serve allure-results",
+    "cucumberautocomplete.steps": "step-definitions/**/*.js",
+    "cucumberautocomplete.syncfeatures": "true",
+    "cucumberautocomplete.strictGherkinCompletion": "true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^25.6.0",
+    "allure-commandline": "^2.43.0",
+    "allure-cucumberjs": "^3.10.2",
+    "exceljs": "^4.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "xlsx": "^0.18.5"
+  }
+}

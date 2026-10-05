@@ -1,0 +1,30 @@
+{
+  "dashboard": {
+    "group": "All",
+    "name": "Device Telemetry Dashboard"
+  },
+  "telemetryWidgets": [
+    {
+      "title": "Temperature",
+      "telemetryKey": "temperature",
+      "unit": "°C",
+      "min": -40,
+      "max": 85
+    },
+    {
+      "title": "Humidity",
+      "telemetryKey": "humidity",
+      "unit": "%",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "chartWidget": {
+    "title": "Telemetry Chart"
+  },
+  "realtime": {
+    "maxWaitMs": 30000,
+    "pollIntervalMs": 2000
+  },
+  "screenshotDir": "test-results/screenshots"
+}

@@ -1,0 +1,30 @@
+# Playwright
+node_modules/
+test-results/
+blob-report/
+playwright-report/
+
+# Playwright auth/cache
+playwright/.cache/
+playwright/.auth/
+
+# Allure
+allure-results/
+allure-report/
+
+# Cucumber
+cucumber-report/
+
+#videos
+test-results/videos/
+test-results/screenshots/
+test-results/traces/
+
+#debug
+debug/
+*.log
+*-debug.json
+
+# Local environment and browser state
+.env
+storageState.json
