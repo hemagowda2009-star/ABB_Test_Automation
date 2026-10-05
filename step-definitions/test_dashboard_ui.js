@@ -1,6 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { ThingsBoardLoginPage } = require('../pages/ThingsBoardLoginPage');
-const { DashboardPage } = require('../pages/DashboardPage');
+const { DashboardPage } = require('../pages/test_dashboard_uiPage');
 const tbData = require('../test-data/thingsboardData.json');
 
 function widgetConfig(title) {
